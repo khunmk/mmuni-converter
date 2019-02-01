@@ -1,0 +1,9 @@
+//actions
+add_action('init', array($this, 'custom_post_type'));
+
+//filter
+add_filter('wp_insert_post_data', array($this, 'filter_post_data'), '99', 2);
+add_action('pre_category_name', array($this, 'do_something'));
+add_action('pre_category_description', array($this, 'do_something'));
+add_action('pre_post_tag_name', array($this, 'do_something'));
+add_action('pre_post_tag_description', array($this, 'do_something'));

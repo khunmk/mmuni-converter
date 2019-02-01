@@ -1,0 +1,22 @@
+{
+    "name": "zero/mm-converter",
+    "description": "Simple Simple zawgyi <=> Unicode coverter",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Khun Moe Kyaw",
+            "email": "blankkhun@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6.4",
+        "googlei18n/myanmar-tools": "^1.1",
+        "rabbit-converter/rabbit-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./app"
+        }
+    }
+}
